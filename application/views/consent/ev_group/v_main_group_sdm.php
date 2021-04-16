@@ -50,9 +50,22 @@ function add_group(){
 
 function Delete_data(gru_id){
 	
-	console.log(gru_id)
+	//console.log(gru_id)
 	
-
+	$.ajax({
+        type: "post",
+        url: "<?php echo base_url(); ?>/ev_group/Evs_group/delete_group_sdm",
+        data: {
+		      "group":group,
+			"Emp_id":Emp_id
+        },
+        dataType: "JSON",
+        success: function(data,status) {
+            console.log(status)
+            
+        }
+     
+        });
 
 }
 
