@@ -107,17 +107,17 @@ class Evs_group extends MainController_avenxo {
 	}
 	// function delete_group_sdm
 	
-	function delete_group_skd()
-	{
-		$group = $this->input->post("group");
-		$Emp_id = $this->input->post("Emp_id");
+	// function delete_group_skd()
+	// {
+	// 	$group = $this->input->post("group");
+	// 	$Emp_id = $this->input->post("Emp_id");
 		
-		$this->load->model('M_evs_group','megd');
-		$this->megd->gru_name = $group;
+	// 	$this->load->model('M_evs_group','megd');
+	// 	$this->megd->gru_name = $group;
 
-		$this->megd->delete();
-	}
-	// function delete_group_skd
+	// 	$this->megd->delete();
+	// }
+	// // function delete_group_skd
 	
 	
 	
