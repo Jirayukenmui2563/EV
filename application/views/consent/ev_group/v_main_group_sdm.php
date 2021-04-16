@@ -50,12 +50,13 @@ function add_group(){
 
 function Delete_data(gru_id){
 	
-	//console.log(gru_id)
+	console.log(gru_id)
 	
 	$.ajax({
         type: "post",
         url: "<?php echo base_url(); ?>/ev_group/Evs_group/delete_group_sdm",
         data: {
+		  	"gru_id":gru_id,
 		      "group":group,
 			"Emp_id":Emp_id
         },
