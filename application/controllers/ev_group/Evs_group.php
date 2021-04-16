@@ -102,6 +102,8 @@ class Evs_group extends MainController_avenxo {
 		
 		$this->load->model('M_evs_group','megd');
 		$this->megd->gru_name = $group;
+		$this->meg->gru_head_dept = $Emp_id;
+		$this->meg->gru_company_id = 1;
 
 		$this->megd->delete();
 	}
