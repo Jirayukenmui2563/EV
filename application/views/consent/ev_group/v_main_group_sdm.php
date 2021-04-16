@@ -265,7 +265,7 @@ function Delete(gru_id){
 					<!-- panel-addtable -->
 					<h4 class="text">Description</h4>
 					<div>
-						<a class="btn btn-danger" >
+						<a class="btn btn-danger" href="#Delete">
 							<i class="ti ti-trash"></i>
 							&nbsp;
 							Delete
