@@ -67,6 +67,8 @@ function Delete_data(gru_id){
 
     });
 	
+    window.location.href = "<?php echo base_url();?>/ev_group/Evs_group/select_company_sdm";
+
 }
 
 
@@ -446,7 +448,7 @@ function Delete_data(gru_id){
 					<div class="btn-group pull-left">	
 						<button type="button" class="btn btn-inverse" data-dismiss="modal">NO</button>
 					</div>
-						<button type="button" class="btn btn-success" onClick="Delete_data()">YES</button>
+						<button type="button" class="btn btn-success" onClick="Delete_data(gru_id)">YES</button>
 				</div>
 				<!-- Modal footer -->
 			</div>
