@@ -84,8 +84,8 @@ function Delete(gru_id){
 					<div class="panel pull-right" id="addtable_filter">
 							<select name="example_length" class="form-control" aria-controls="example" onChange="test(value)">
 								<option value="0">Select Company</option>
-								<option value="1" selected>SDM</option>
-								<option value="2">SKD</option>
+								<option value="1" >SDM</option>
+								<option value="2" selected>SKD</option>
 							</select>
 					</div>
 					<!-- select company -->
