@@ -48,7 +48,7 @@ function add_group(){
 }
 
 
-function Delete(gru_id){
+function Delete_data(gru_id){
 	
 	console.log(gru_id)
 	
@@ -446,7 +446,7 @@ function Delete(gru_id){
 					<div class="btn-group pull-left">	
 						<button type="button" class="btn btn-inverse" data-dismiss="modal">NO</button>
 					</div>
-						<button type="button" class="btn btn-success" onClick="Delete()">YES</button>
+						<button type="button" class="btn btn-success" onClick="Delete_data()">YES</button>
 				</div>
 				<!-- Modal footer -->
 			</div>
