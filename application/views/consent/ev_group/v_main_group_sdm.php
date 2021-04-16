@@ -54,7 +54,7 @@ function Delete(gru_id){
 	
 	 $.ajax({
         type: "POST",
-        url: "<?php echo base_url(); ?>/ev_group/Evs_group/add_group_sdm",
+        url: "<?php echo base_url(); ?>/ev_group/Evs_group/delete_group_sdm",
         data: {
 			"group":group,
 			"Emp_id":Emp_id			
