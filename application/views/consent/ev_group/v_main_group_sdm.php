@@ -137,7 +137,7 @@ function Delete(gru_id){
 											<td><?php //echo $row->Empname_eng . "  " . $row->Empsurname_eng; ?></td>
 											<td>
 												<div class="demo-btns">
-													<a data-toggle="modal" class="btn btn btn-danger" href="#Delete<?echo $row->gru_id?>">
+													<a data-toggle="modal" class="btn btn btn-danger" href="#Delete">
 														<i class="ti ti-trash"></i>
 													</a>
 													<a data-toggle="modal" class="btn btn-warning" href="#Edit<?echo $row->gru_id?>">
@@ -265,7 +265,7 @@ function Delete(gru_id){
 					<!-- panel-addtable -->
 					<h4 class="text">Description</h4>
 					<div>
-						<a class="btn btn-danger" href="#Delete">
+						<a class="btn btn-danger" >
 							<i class="ti ti-trash"></i>
 							&nbsp;
 							Delete
