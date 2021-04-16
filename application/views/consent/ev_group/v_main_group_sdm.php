@@ -52,22 +52,7 @@ function Delete_data(gru_id){
 	
 	console.log(gru_id)
 	
-	 $.ajax({
-        type: "POST",
-        url: "<?php echo base_url(); ?>/ev_group/Evs_group/delete_group_sdm",
-        data: {
-			"group":group,
-			"Emp_id":Emp_id			
-        },
-        dataType: "JSON",
-        success: function(status) {
-			console.log(status)
-        }
-        // success function
 
-    });
-	
-    window.location.href = "<?php echo base_url();?>/ev_group/Evs_group/select_company_sdm";
 
 }
 
@@ -448,7 +433,7 @@ function Delete_data(gru_id){
 					<div class="btn-group pull-left">	
 						<button type="button" class="btn btn-inverse" data-dismiss="modal">NO</button>
 					</div>
-						<button type="button" class="btn btn-success" onclick="Delete_data(gru_id)">YES</button>
+						<button type="button" class="btn btn-success" onclick="Delete_data()">YES</button>
 				</div>
 				<!-- Modal footer -->
 			</div>
