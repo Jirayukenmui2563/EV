@@ -74,7 +74,7 @@ class Da_evs_group extends evs_model {
 
 	function delete() {
 	 	
-	 	$sql = "DELETE FROM evs_database.evs_group (gru_id, gru_name, gru_head_dept,gru_company_id)
+	 	$sql = "DELETE FROM evs_database.evs_group 
 	 	VALUES(?, ?, ?,?) 
 		WHERE  gru_id = ? ";
 		
