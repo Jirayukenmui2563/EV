@@ -449,8 +449,12 @@ function Delete_data(gru_id){
 					<div class="btn-group pull-left">	
 						<button type="button" class="btn btn-inverse" data-dismiss="modal">NO</button>
 					</div>
+						
 						<button type="button" class="btn btn-success" onclick="Delete_data()">YES</button>
+					
+
 				</div>
+
 				<!-- Modal footer -->
 			</div>
 			<!-- modal-content -->
