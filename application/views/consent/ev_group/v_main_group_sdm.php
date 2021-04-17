@@ -147,7 +147,7 @@ function Delete_data(gru_id){
 											<td><?php //echo $row->Empname_eng . "  " . $row->Empsurname_eng; ?></td>
 											<td>
 												<div class="demo-btns">
-													<a data-toggle="modal" class="btn btn btn-danger" href="#Delete">
+													<a data-toggle="modal" class="btn btn btn-danger" href="#Delete<?echo $row->gru_id?>">
 														<i class="ti ti-trash"></i>
 													</a>
 													<a data-toggle="modal" class="btn btn-warning" href="#Edit<?echo $row->gru_id?>">
