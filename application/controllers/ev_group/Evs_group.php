@@ -98,12 +98,11 @@ class Evs_group extends MainController_avenxo {
 	function delete_group_sdm()
 	{
 	
-		
-		$this->load->model('M_evs_group','megd');
+		$gru_id = $this->input->post('gru_id');
+		$this->load->model('Da_evs_group','megd');
 		$this->megd->gru_name = $group;
 		$this->megd->gru_head_dept = $Emp_id;
 		$this->megd->gru_company_id = 1;
-
 		$this->megd->delete();
 	}
 	// function delete_group_sdm
