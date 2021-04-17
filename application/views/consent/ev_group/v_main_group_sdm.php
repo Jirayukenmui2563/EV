@@ -50,20 +50,15 @@ function add_group(){
 
 function Delete_data(gru_id){
 	
-	
-	var group = document.getElementById("grouptext").value;
-	var Emp_id = document.getElementById("Emp_id").value;
+	console.log(gru_id);
 
-	console.log(group);
-	console.log(Emp_id);
+	
 
 	$.ajax({
         type: "post",
         url: "<?php echo base_url(); ?>/ev_group/Evs_group/delete_group_sdm",
         data: {
-		  	
-		      "group":group,
-			"Emp_id":Emp_id
+		"gru_id":gru_id
         },
         dataType: "JSON",
         success: function(data,status) {
@@ -147,10 +142,10 @@ function Delete_data(gru_id){
 											<td><?php //echo $row->Empname_eng . "  " . $row->Empsurname_eng; ?></td>
 											<td>
 												<div class="demo-btns">
-													<a data-toggle="modal" class="btn btn btn-danger" href="#Delete<?echo $row->gru_id?>">
+													<a data-toggle="modal" class="btn btn btn-danger" href="#Delete<?php echo $row->gru_id?>">
 														<i class="ti ti-trash"></i>
 													</a>
-													<a data-toggle="modal" class="btn btn-warning" href="#Edit<?echo $row->gru_id?>">
+													<a data-toggle="modal" class="btn btn-warning" href="#Edit<?php echo $row->gru_id?>">
 														<i class="ti ti-pencil-alt"></i>
 													</a>
 													<a href ="<?php echo base_url(); ?>/ev_group/Evs_group/add_group_sdm" data-toggle="modal" class="btn btn-info" href="#">
@@ -160,7 +155,7 @@ function Delete_data(gru_id){
 											</td>
 										</tr>
 										<!-- Model Edit -->	
-										<div class="modal fade" id="Edit<?echo $row->gru_id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal fade" id="Edit<?php echo $row->gru_id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog">
 												<div class="modal-content">
 													<div class="modal-header" style="background-color:gray;">
@@ -218,7 +213,7 @@ function Delete_data(gru_id){
 										<!-- End Modal Edit_add-->	
 										
 										<!-- Modal Delete -->
-										<div class="modal fade" id="Delete<?echo $row->gru_id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal fade" id="Delete<?php echo $row->gru_id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog">
 												<div class="modal-content">
 													<div class="modal-header" style="background-color:gray;">
@@ -243,7 +238,7 @@ function Delete_data(gru_id){
 														<div class="btn-group pull-left">	
 															<button type="button" class="btn btn-inverse" data-dismiss="modal">NO</button>
 														</div>
-															<button type="button" class="btn btn-success" onClick="Delete_data(<?echo $row->gru_id?>)">YES</button>
+															<button type="button" class="btn btn-success" onClick="Delete_data(<?php echo $row->gru_id; ?>)">YES</button>
 													</div>
 													<!-- Modal footer -->
 												</div>
