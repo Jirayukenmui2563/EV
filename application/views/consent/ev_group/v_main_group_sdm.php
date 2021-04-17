@@ -51,12 +51,14 @@ function add_group(){
 function Delete_data(gru_id){
 	
 	console.log(gru_id)
-	
+	var group = document.getElementById("grouptext").value;
+	var Emp_id = document.getElementById("Emp_id").value;
+
 	$.ajax({
-        type: "post",
+        type: "GET",
         url: "<?php echo base_url(); ?>/ev_group/Evs_group/delete_group_sdm",
         data: {
-		  	"gru_id":gru_id,
+		  	
 		      "group":group,
 			"Emp_id":Emp_id
         },
